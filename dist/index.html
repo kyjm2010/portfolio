@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyle McDonald Portfolio</title>
+    <script src="https://kit.fontawesome.com/738255dfdd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <h1>My portfolio site</h1>
+    <div class="container">
+        <div class="pinboard">
+            <div id="dropdown" class="dropdown">
+                <div id="cord" class="cord">O</div>
+                <h3 id='close' onClick=exit()>X</h3>
+                <div id="infoDisplay" class="infoDisplay"></div>
+                <div id="next" class="next" onClick="flip()">V</div>
+                <div id="previous" class="previous" onClick="flip()">V</div>
+            </div>
+            <div id="items" class="items">
+                <div id="cap" class="cap" onClick="show(this.id)"></div>
+                <div id="caution" class="caution">
+                    <p>tion&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaution&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCaution</p>
+                </div>
+                <div id="resume" class="resume" onClick="show(this.id)">
+                    <p>My Resume</p>
+                </div>
+                <div class="awards">
+                    <div id="oswald" class="oswald" onClick="show(this.id)">
+                        <h1>OSWALD AWARDS</h1>
+                        <h1>2020</h1>
+                        <h3>Outstanding Student in a Department</h3>
+                        <p>Presented to</p>
+                        <h1>Kyle McDonald</h1>
+                        <p class="rec">In recognition of their valuable contribution to</p>
+                        <h3>CTEC Web Development Program</h3>
+                    </div>
+                    <div id="vp" class="vp" onClick="show(this.id)">
+                        <h1>Vice President's List</h1>
+                        <p><i class="far fa-check-circle"></i>Spring 2019</p>
+                        <p><i class="far fa-check-circle"></i>Summer 2019</p>
+                        <p><i class="far fa-check-circle"></i>Fall 2019</p>
+                        <p><i class="far fa-check-circle"></i>Winter 2020</p>
+                        <p><i class="far fa-check-circle"></i>Spring 2020</p>
+                        <p><i class="far fa-check-circle"></i>Summer 2020</p>
+                    </div>
+                    <div id="mta_py" class="mta" onClick="show(this.id)">
+                        <div class="overlay">
+                            <h1>Microsoft Technology Associate</h1>
+                            <p>Kyle John McDonald</p>
+                            <p>Introduction to Programming Python</p>
+                        </div>
+                    </div>
+                    <div id="mta_html" class="mta" onClick="show(this.id)">
+                        <div class="overlay">
+                            <h1>Microsoft Technology Associate</h1>
+                            <p>Kyle John McDonald</p>
+                            <p>Introduction to Programming HTML/CSS</p>
+                        </div>
+                    </div>
+                    <div id="mta_fun" class="mta" onClick="show(this.id)">
+                        <div class="overlay">
+                            <h1>Microsoft Technology Associate</h1>
+                            <p>Kyle John McDonald</p>
+                            <p>Software Development Fundamentals</p>
+                        </div>
+                    </div>
+                    <div id="mta_js" class="mta" onClick="show(this.id)">
+                        <div class="overlay">
+                            <h1>Microsoft Technology Associate</h1>
+                            <p>Kyle John McDonald</p>
+                            <p>Introduction to Programming JavaScript</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills">
+                    <div id="laravel" class="laravel" onClick="show(this.id)"></div>
+                    <div id="html" class="html" onClick="show(this.id)"></div>
+                    <div id="php" class="php" onClick="show(this.id)"></div>
+                    <div id="js" class="js" onClick="show(this.id)"></div>
+                    <div id="css" class="css" onClick="show(this.id)"></div>
+                    <div id="c" class="c" onClick="show(this.id)"></div>
+                    <div id="wp" class="wp" onClick="show(this.id)"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
