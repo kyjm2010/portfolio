@@ -268,12 +268,18 @@ a{
 }
 
 .linkedin_info {
+    display: inline-block;
     font-size: .65em;
     color: white;
     margin-left: 1.25em;
     margin-top: -.5em;
+    transition: .5s;
 }
 
+.linkedin_info:hover{
+    color: gray;
+    transform: translate(10px);
+}
 .footer {
     position: relative;
     bottom: 0;
@@ -560,11 +566,24 @@ a{
         padding: .75em 0;
         box-shadow: 0 10px 20px black;
     }
+
+    .nav_link{
+        display: inline-block;
+        transition: .5s
+    }
+
+    .nav_link:hover{
+        color: gray;
+        transform: translate(10px);
+    }
     .nav ul li {
         display: inline;
         padding: 3em;
         font-size: 1.3em;
         color: var(--text-clr);
+    }
+    .nav ul li:hover{
+        transform: rotate(90deg);
     }
     .ribbon1 {
         z-index: -1;
@@ -627,7 +646,7 @@ a{
         margin-top: 15em;
         height: 100%;
         display: grid;
-        grid-template-columns: 300px 30px 70%;
+        grid-template-columns: 300px 50px 70%;
         grid-template-rows: 100px 1fr;
         grid-template-areas: "tag . ." "image line about";
     }
@@ -655,7 +674,7 @@ a{
     }
     .skills {
         display: grid;
-        grid-template-columns: 1fr 10px 1fr;
+        grid-template-columns: 1fr 50px 1fr;
         grid-template-rows: 100px 1fr;
         grid-template-areas: "tag1 . tag2" "list line certs";
         margin: 0;
@@ -799,7 +818,7 @@ a{
         grid-area: line;
         height: 60%;
         width: 3px;
-        margin-top: 3em;
+        margin: 3em 1em;
         background: var(--text-clr);
     }
     .project .vertical_line {
@@ -814,7 +833,7 @@ a{
     .project {
         display: grid;
         grid-template-rows: 100px 400px 100px;
-        grid-template-columns: 300px 10px 1fr;
+        grid-template-columns: 300px 50px 1fr;
         grid-template-areas: "title line image" "content line image" ". . buttons";
         
     }
@@ -843,7 +862,7 @@ a{
     }
     .project_image {
         width: 80%;
-        height: 400px;
+        height: 350px;
         margin-left: 1em;
         align-self: start;
     }
@@ -889,7 +908,7 @@ a{
         justify-content: center;
         width: 90%;
         height: 75px;
-        margin-top: -1em;
+        margin-top: -2em;
         margin-left: .3em;
     }
 
