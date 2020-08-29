@@ -902,6 +902,26 @@ a{
         margin-top: -3em;
     }
 
+    .fa-envelope, .fa-phone-alt, .fa-linkedin-in{
+        margin: 0 0 0 1em;
+        
+    }
+
+    .fa-phone-alt{
+        margin-top: .35em;
+    }
+
+    .linkedin_info, .email{
+        margin: 0;
+
+    }
+
+    .phone_info{
+        margin-left: .25em;
+        margin-top: 2em;
+        font-size: 1em;
+    }
+
     .footer {
         height: 5em;
         font-size: 1.3em;
@@ -909,6 +929,7 @@ a{
         display: flex;
         align-items: center;
         justify-content: center;
+        border-top: 40px solid var(--text-clr)
     }
     .project_buttons {
         grid-area: buttons;
@@ -919,6 +940,8 @@ a{
         margin-top: -2em;
         margin-left: .3em;
     }
+
+    
 
     @media (min-width: 1200px) {
         .wrapper, .landing, .desktop_blocks{
@@ -957,12 +980,12 @@ a{
             top: 26vh;
         }
         
-        .fa-phone-alt{
+        /* .fa-phone-alt{
             margin-left: -10%;
-        }
+        } */
 
         .phone_info{
-            margin-left: 2em;
+            /* margin-left: 2em; */
             font-size: 1em;
         }
         
