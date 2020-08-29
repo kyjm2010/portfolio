@@ -63,7 +63,7 @@ header p {
 }
 
 .content {
-    width: 55vw;
+    width: 65vw;
     height: 100%;
     background: var(--content-bg);
     color: var(--text-clr);
